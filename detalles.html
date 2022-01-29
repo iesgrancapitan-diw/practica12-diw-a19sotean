@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Solís Tejada</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Luxurious+Roman&family=Pacifico&family=Press+Start+2P&family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body class="detalles">
+    <header>
+        <div class="header1">
+            <div>
+                <img src="img/logo.png" width="150" height="150">
+                <h1>Casas rurales</h1>
+            </div>
+            <a href=""><span class="material-icons-outlined">
+                    perm_identity
+                </span></a>
+            <div class="sesion">
+                <ul>
+                    <li><a href=#>Iniciar sesión</a></li>
+                    <li><a href=#>Registrarse</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="casa">
+        <h2 class="titulo">Mas postius</h2>
+        <div id="slider">
+            <img src="img/casa1.jpg" alt="casa">
+            <img src="img/casa1img2.jpg" alt="casa">
+            <img src="img/casa1img3.jpg" alt="casa">
+            <img src="img/casa1img4.jpg" alt="casa">
+            <img src="img/casa1img5.jpg" alt="casa">
+            <img src="img/casa1img6.jpg" alt="casa">
+            <img src="img/casa1img7.jpg" alt="casa">
+            <img src="img/casa1img8.jpg" alt="casa">
+            <img src="img/casa1img9.jpg" alt="casa">
+        </div>
+    </section>
+
+    <div class="global">
+        <section class="reservar">
+            <h2>Resevar casa rural</h2>
+            <h3>155€/noche</h3>
+            <form action="" class="formDetalles">
+                <input type="text" placeholder="Nombre" required><br>
+                <input type="text" placeholder="Apellidos" required><br>
+                <input type="email" placeholder="Correo electrónico" required><br>
+                <input type="number" placeholder="Telefono" required><br>
+                <input type="date" id="fechaEntrada" placeholder="Fecha de entrada" required><br>
+                <input type="date" id="fechaSalida" placeholder="Fecha de salida" required><br>
+                <input type="number" placeholder="Nº de huéspedes" min="1" required><br>
+                <input type="submit" class="buscar" value="Reservar">
+            </form>
+        </section>
+
+        <main>
+            <section class="descripcion">
+                <h2>Descripción de Mas postius</h2>
+                <p>Mas Postius una espectacular masía del Siglo XII situada a 850m de altitud en el municipio de
+                    Muntanyola (Osona - Catalunya). La casa ha sido reformada convirtiéndola en un espacio encantador y
+                    habitable a nuestros tiempos. El alojamiento dispone de 10 habitaciones con calefacción, TV, muebles
+                    antiguos y todas con vistas al exterior.</p>
+                <p>Algunas con baño compartido y la mayoría con baño integrado. Una de las habitaciones tiene bañera de
+                    hidromasaje.</p>
+                <p>La casa cuenta con comedor, sala de estar, restaurante, huerta, jardín con mobiliario, piscina
+                    climatizada, aparcamiento, animales y mucho terreno para hacer caminatas.</p>
+                <p>Ofrecemos cocina casera y tradicional. Os esperamos para ofreceros un trato familiar y acogedor.</p>
+
+                <div class="iconosCosas">
+                    <p class=icon><i class="material-icons">wifi</i>Wi-Fi<i class="material-icons">done</i></p>
+                    <p class=icon><i class="material-icons">pool</i>Piscina <i class="material-icons">done</i></p>
+                    <p class=icon><i class="material-icons">fireplace</i>Chimenea<i class="material-icons">done</i></p>
+                    <p class=icon><i class="material-icons">local_fire_department</i>Calefacción<i
+                            class="material-icons">done</i></p>
+                    <p class=icon><i class="material-icons">ac_unit</i>Aire acondicionado<i
+                            class="material-icons">clear</i></p class=icon>
+                    <p class=icon><i class="material-icons">pets</i>Mascotas permitidas<i
+                            class="material-icons">clear</i></p>
+                </div>
+            </section>
+
+            <section class="localizacion">
+                <h2>Localización</h2>
+                <iframe src="https://maps.google.com/maps?q=mas%20postius&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen></iframe>
+            </section>
+        </main>
+    </div>
+
+    <section class="comentarios">
+        <h2>Comentarios</h2>
+        <article>
+            <div>
+                <img src="img/avatar1.png" width="60" height="60">
+                <p>Luna Lovegood</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1" class="estrella">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2" class="estrella">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3" class="estrella">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4" class="estrella">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div>
+                <p>29/12/2021</p>
+            </div>
+            <div>
+                <p>Es una casa rural espectacular, hemos estado en una parte de la casa solo para nuestras 3
+                    habitaciones y ha sido una maravilla, con nuestro saloncito para nosotros solos.
+                    La comida muy buena y casera, los anfitriones muy amables, las instalaciones tmbn muy buenas.
+                    Un lugar con encanto para desconectar, entre la naturaleza, sin duda volveremos.</p>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <img src="img/avatar2.png" width="60" height="60">
+                <p>Anakin Skywalker</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1" class="estrella">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2" class="estrella">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3" class="estrella">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4" class="estrella">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5" class="estrella">★</label>
+                    </p>
+                </form>
+            </div>
+            <div>
+                <p>05/11/2021</p>
+            </div>
+            <div>
+                <p>Un sitio excepcional para disfrutar de una estancia romántica en plena naturaleza.
+                    Unas habitaciones confortables con una decoración personalizada y unas vistas panorámicas en las
+                    montañas, ademas de tener diferentes espacios de descanso y una piscina cubierta para relajarse.
+                    Un trato familiar, una comida casera y tradicional, una amabilidad sincera y jovial gracias a los
+                    dueños y sus hijos.</p>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <img src="img/avatar3.png" width="60" height="60">
+                <p>Hermione Granger</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1" class="estrella">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2" class="estrella">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </div>
+            <div>
+                <p>13/11/2021</p>
+            </div>
+            <div>
+                <p>Es una casa rural muy antigua, mis hijos tenían un poco de miedo y encima hubo tormenta durante toda
+                    la estancia.</p>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <img src="img/avatar4.png" width="60" height="60">
+                <p>Obi-Wan Kenobi</p>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1" class="estrella">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2" class="estrella">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3" class="estrella">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4" class="estrella">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5" class="estrella">★</label>
+                    </p>
+                </form>
+            </div>
+            <div>
+                <p>13/10/2021</p>
+            </div>
+            <div>
+                <p>Fuimos por un evento familiar. La casa es muy linda, limpia y ordenada. Es ideal para pasar momentos
+                    de descanso cerca de la naturaleza. La comida es realmente muy buena y la atención excelente.
+                    El lugar está en medio de una montaña, por lo que es ideal para desconectar.</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <section class="nombre">
+            <p>Andrea Solís Tejada</p>
+            <p>Estudiante desarrollo de aplicaciones web</p>
+        </section>
+        <section class="redessociales">
+            <a href="https://twitter.com/Andyin_" target="_blank"><img src="img/twitter.svg" alt="twitter" width="50px"
+                    height="50px"></a>
+            <a href="https://www.linkedin.com/in/andrea-solís-tejada-531909225/" target="_blank"><img
+                    src="img/linkedin.svg" alt="linkedin" width="50px" height="50px"></a>
+            <a href="https://github.com/a19sotean" target="_blank"><img src="img/github.svg" alt="github" width="50px"
+                    height="50px"></a>
+        </section>
+    </footer>
+</body>
+
+</html>

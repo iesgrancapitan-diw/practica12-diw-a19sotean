@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Solís Tejada</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Licorice&family=Luxurious+Roman&family=Pacifico&family=Press+Start+2P&family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+
+<body class="listado">
+    <header>
+        <div class="header1">
+            <div>
+                <img src="img/logo.png" width="150" height="150">
+                <h1>Casas rurales</h1>
+            </div>
+            <a href=""><span class="material-icons-outlined">
+                    perm_identity
+                </span></a>
+            <div class="sesion">
+                <ul>
+                    <li><a href=#>Iniciar sesión</a></li>
+                    <li><a href=#>Registrarse</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="busquedas">
+            <form action="">
+                <input type="text" placeholder="Destino"><br />
+                <input type="date" placeholder="Fecha de llegada"><br />
+                <input type="date" placeholder="Fecha de salida"><br />
+                <input type="number" placeholder="Huéspedes" min="1"><br />
+            </form>
+            <a href="listado2.html"><input type="submit" class="buscar" value="Buscar"></a>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <section class="filtros">
+            <h3>Ordenar por:</h3>
+            <div>
+                <select name="filtroOrden" class="filtroOrden">
+                    <option value="precioAscendente">Precio Ascendente</option>
+                    <option value="precioDescendente">Precio Descendente</option>
+                    <option value="mayorValoracion">Mayor Valoracion</option>
+                </select>
+            </div>
+
+            <div id="rangoPrecios">
+                <h3>Rango de precio:</h3>
+                <label for="precioMin">Precio Min:</label>
+                <input id="precioMin" type="number" min="5" max="2000">
+                <label for="precioMax">Precio Máx:</label>
+                <input id="precioMax" type="number" min="5" max="2000">
+            </div>
+
+            <div>
+                <h3>Habitaciones:</h3>
+                <form action="">
+                    <input type="number" placeholder="Nº habitaciones" min="1">
+                </form>
+            </div>
+
+            <div id="caracteristicas">
+                <h3>Características:</h3>
+                <input type="checkbox"><label for="wifi">Wi-fi</label><br />
+                <input type="checkbox"><label for="piscina">Piscina</label><br />
+                <input type="checkbox"><label for="chimenea">Chimenea</label><br />
+                <input type="checkbox"><label for="calefaccion">Calefacción</label><br />
+                <input type="checkbox"><label for="aireAcondicionado">Aire acondicionado</label><br />
+                <input type="checkbox"><label for="mascotas">Se aceptan mascotas</label>
+            </div>
+
+            <div>
+                <a href="listado2.html"><input type="submit" class="buscar" value="Filtrar"></a>
+            </div>
+        </section>
+
+        <main>
+            <section>
+                <article>
+                    <div id="img-wrapper">
+                        <img class="foto" src="img/casa1.jpg" height="300" width="300">
+                    </div>
+                    <div id="content-wrapper">
+                        <div>
+                            <h2 class="titulo">Mas postius</h2>
+                            <h2>155€/noche</h2>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    room
+                                </span>
+                                <p>Barcelona</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    groups
+                                </span>
+                                <p>25 personas</p>
+                            </div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    king_bed
+                                </span>
+                                <p>10 habitaciones</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="detalles.html" target="_blank"><input type="submit" class="entrar" value="Reserva ya!"></a>
+                            <form>
+                                <p class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5">
+                                    <label for="radio1" class="estrella">★</label>
+                                    <input id="radio2" type="radio" name="estrellas" value="4">
+                                    <label for="radio2" class="estrella">★</label>
+                                    <input id="radio3" type="radio" name="estrellas" value="3">
+                                    <label for="radio3" class="estrella">★</label>
+                                    <input id="radio4" type="radio" name="estrellas" value="2">
+                                    <label for="radio4" class="estrella">★</label>
+                                    <input id="radio5" type="radio" name="estrellas" value="1">
+                                    <label for="radio5">★</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div id="img-wrapper">
+                        <img class="foto" src="img/casa2.jpg" height="300" width="300">
+                    </div>
+                    <div id="content-wrapper">
+                        <div>
+                            <h2 class="titulo">Alojamiento Villatoya</h2>
+                            <h2>90€/noche</h2>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    room
+                                </span>
+                                <p>Albacete</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    groups
+                                </span>
+                                <p>10 personas</p>
+                            </div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    king_bed
+                                </span>
+                                <p>4 habitaciones</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="detalles.html" target="_blank"><input type="submit" class="entrar" value="Reserva ya!"></a>
+                            <form>
+                                <p class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5">
+                                    <label for="radio1" class="estrella">★</label>
+                                    <input id="radio2" type="radio" name="estrellas" value="4">
+                                    <label for="radio2" class="estrella">★</label>
+                                    <input id="radio3" type="radio" name="estrellas" value="3">
+                                    <label for="radio3" class="estrella">★</label>
+                                    <input id="radio4" type="radio" name="estrellas" value="2">
+                                    <label for="radio4">★</label>
+                                    <input id="radio5" type="radio" name="estrellas" value="1">
+                                    <label for="radio5">★</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div id="img-wrapper">
+                        <img class="foto" src="img/casa3.webp" height="300" width="300">
+                    </div>
+                    <div id="content-wrapper">
+                        <div>
+                            <h2 class="titulo">Lo Paller de Roc</h2>
+                            <h2>102€/noche</h2>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    room
+                                </span>
+                                <p>Lleida</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    groups
+                                </span>
+                                <p>15 personas</p>
+                            </div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    king_bed
+                                </span>
+                                <p>6 habitaciones</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="detalles.html" target="_blank"><input type="submit" class="entrar" value="Reserva ya!"></a>
+                            <form>
+                                <p class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5">
+                                    <label for="radio1" class="estrella">★</label>
+                                    <input id="radio2" type="radio" name="estrellas" value="4">
+                                    <label for="radio2" class="estrella">★</label>
+                                    <input id="radio3" type="radio" name="estrellas" value="3">
+                                    <label for="radio3">★</label>
+                                    <input id="radio4" type="radio" name="estrellas" value="2">
+                                    <label for="radio4">★</label>
+                                    <input id="radio5" type="radio" name="estrellas" value="1">
+                                    <label for="radio5">★</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div id="img-wrapper">
+                        <img class="foto" src="img/casa4.jpeg" height="300" width="300">
+                    </div>
+                    <div id="content-wrapper">
+                        <div>
+                            <h2 class="titulo">Casa Sierra de San Vicente</h2>
+                            <h2>200€/noche</h2>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    room
+                                </span>
+                                <p>Toledo</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    groups
+                                </span>
+                                <p>28 personas</p>
+                            </div>
+                            <div>
+                                <span class="material-icons-outlined">
+                                    king_bed
+                                </span>
+                                <p>8 habitaciones</p>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="detalles.html" target="_blank"><input type="submit" class="entrar" value="Reserva ya!"></a>
+                            <form>
+                                <p class="clasificacion">
+                                    <input id="radio1" type="radio" name="estrellas" value="5">
+                                    <label for="radio1" class="estrella">★</label>
+                                    <input id="radio2" type="radio" name="estrellas" value="4">
+                                    <label for="radio2" class="estrella">★</label>
+                                    <input id="radio3" type="radio" name="estrellas" value="3">
+                                    <label for="radio3" class="estrella">★</label>
+                                    <input id="radio4" type="radio" name="estrellas" value="2">
+                                    <label for="radio4" class="estrella">★</label>
+                                    <input id="radio5" type="radio" name="estrellas" value="1">
+                                    <label for="radio5" class="estrella">★</label>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </section>
+    </div>
+    </main>
+
+    <footer>
+        <section class="nombre">
+            <p>Andrea Solís Tejada</p>
+            <p>Estudiante desarrollo de aplicaciones web</p>
+        </section>
+        <section class="redessociales">
+            <a href="https://twitter.com/Andyin_" target="_blank"><img src="img/twitter.svg" alt="twitter" width="50px"
+                    height="50px"></a>
+            <a href="https://www.linkedin.com/in/andrea-solís-tejada-531909225/" target="_blank"><img
+                    src="img/linkedin.svg" alt="linkedin" width="50px" height="50px"></a>
+            <a href="https://github.com/a19sotean" target="_blank"><img src="img/github.svg" alt="github" width="50px"
+                    height="50px"></a>
+        </section>
+    </footer>
+</body>
+
+</html>
